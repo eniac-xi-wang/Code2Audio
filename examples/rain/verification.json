@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "model": {
+    "name": "Xenova/clap-htsat-unfused",
+    "audio_weights_sha256": "a1c2b43c44f71e0fa841a4b86700886c199bf87699ea45632c4d831bc6c88957",
+    "text_weights_sha256": "1a3df8b197e249816e08415fd040434c44762b2eea7eb7bf8a48a0f0bf3c14e5",
+    "tokenizer_sha256": "dc239041d98de27ffc3975473a1a23e3db4c937b23c138c38bbc66588bd247e5"
+  },
+  "caption_pool": [
+    {
+      "text": "Heavy rain falling steadily with a consistent patter.",
+      "origins": [
+        "reference",
+        "candidate_0"
+      ],
+      "eligible": true
+    },
+    {
+      "text": "Raindrops strike a surface with a steady, rhythmic patter.",
+      "origins": [
+        "reference"
+      ],
+      "eligible": true
+    },
+    {
+      "text": "The sound is dense and continuous, suggesting moderate to heavy rainfall.",
+      "origins": [
+        "reference"
+      ],
+      "eligible": false
+    },
+    {
+      "text": "No other sounds are audible; the rain dominates the acoustic space.",
+      "origins": [
+        "reference"
+      ],
+      "eligible": false
+    },
+    {
+      "text": "The texture is granular and uniform, with individual drops distinguishable.",
+      "origins": [
+        "reference"
+      ],
+      "eligible": true
+    },
+    {
+      "text": "The rain maintains a consistent intensity throughout the recording.",
+      "origins": [
+        "reference"
+      ],
+      "eligible": true
+    },
+    {
+      "text": "The acoustic environment feels enclosed or sheltered, with no wind or echo.",
+      "origins": [
+        "reference"
+      ],
+      "eligible": false
+    },
+    {
+      "text": "A continuous, dense patter of raindrops hitting a surface.",
+      "origins": [
+        "candidate_0"
+      ],
+      "eligible": true
+    },
+    {
+      "text": "The sound maintains a steady rhythm without significant variation in intensity.",
+      "origins": [
+        "candidate_0"
+      ],
+      "eligible": false
+    },
+    {
+      "text": "No other environmental sounds are audible beneath the rain.",
+      "origins": [
+        "candidate_0"
+      ],
+      "eligible": false
+    },
+    {
+      "text": "The texture is granular and uniform, suggesting a high volume of droplets.",
+      "origins": [
+        "candidate_0"
+      ],
+      "eligible": false
+    },
+    {
+      "text": "The acoustic space feels enclosed, with minimal echo or reverberation.",
+      "origins": [
+        "candidate_0"
+      ],
+      "eligible": true
+    },
+    {
+      "text": "The rain appears to be falling uniformly across the recording area.",
+      "origins": [
+        "candidate_0"
+      ],
+      "eligible": true
+    }
+  ],
+  "audio_sha256": {
+    "reference": "8367d8beff7aef5ee7e041d1657755044c1e4d9232e25c225765adf58c42d834",
+    "candidate_0": "63ec048f12d1ea85aab60b8dae7f4babbb5c24c55ce1ff816bc925f18a3e9f00"
+  },
+  "scores": {
+    "reference": [
+      0.5782797932624817,
+      0.48445355892181396,
+      0.6043695211410522,
+      0.4985477328300476,
+      0.16847996413707733,
+      0.5629227161407471,
+      -0.11141988635063171,
+      0.598871111869812,
+      0.23641981184482574,
+      0.5313861966133118,
+      0.1781858503818512,
+      -0.022484280169010162,
+      0.5882841944694519
+    ],
+    "candidate_0": [
+      0.5492534637451172,
+      0.47443491220474243,
+      0.6123847961425781,
+      0.5168102979660034,
+      0.2151087522506714,
+      0.547500491142273,
+      -0.1678946167230606,
+      0.6127561330795288,
+      0.25739073753356934,
+      0.4516827464103699,
+      0.22934988141059875,
+      0.013214552775025368,
+      0.5763470530509949
+    ]
+  },
+  "windows": {
+    "reference": {
+      "times": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "scores": [
+        [
+          0.5782797932624817,
+          0.48445355892181396,
+          0.6043695211410522,
+          0.4985477328300476,
+          0.16847996413707733,
+          0.5629227161407471,
+          -0.11141988635063171,
+          0.598871111869812,
+          0.23641981184482574,
+          0.5313861966133118,
+          0.1781858503818512,
+          -0.022484280169010162,
+          0.5882841944694519
+        ]
+      ]
+    },
+    "candidate_0": {
+      "times": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "scores": [
+        [
+          0.5492534637451172,
+          0.47443491220474243,
+          0.6123847961425781,
+          0.5168102979660034,
+          0.2151087522506714,
+          0.547500491142273,
+          -0.1678946167230606,
+          0.6127561330795288,
+          0.25739073753356934,
+          0.4516827464103699,
+          0.22934988141059875,
+          0.013214552775025368,
+          0.5763470530509949
+        ]
+      ]
+    }
+  },
+  "reference_target_match": 0.44853400811553,
+  "candidate_target_match": {
+    "candidate_0": 0.446574404835701
+  },
+  "mean_target_match": 0.446574404835701,
+  "minimum_candidate_match": 0.446574404835701,
+  "threshold": 0.36853400811553,
+  "reference_supported": true,
+  "semantic_pass": true,
+  "policy": {
+    "minimum_target_similarity": 0.35,
+    "maximum_reference_drop": 0.08
+  },
+  "caption_score_gaps": {
+    "candidate_0": [
+      -0.029026329517364502,
+      -0.010018646717071533,
+      0.008015275001525879,
+      0.01826256513595581,
+      0.046628788113594055,
+      -0.015422224998474121,
+      -0.056474730372428894,
+      0.013885021209716797,
+      0.02097092568874359,
+      -0.0797034502029419,
+      0.05116403102874756,
+      0.03569883294403553,
+      -0.011937141418457031
+    ]
+  },
+  "interpretation": "Semantic screening under configured thresholds, not a probability, naturalness score or proof of exact reconstruction."
+}

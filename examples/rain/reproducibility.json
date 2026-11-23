@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "checks": {
+    "reference_refit_equals_parameters": true,
+    "same_seed_reproduces_included_pcm": true,
+    "live_clap_semantic_screen_passed": true
+  },
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "onnxruntime": "1.31.1",
+    "transformers": "4.57.6",
+    "certifi": "2026.10.23"
+  },
+  "artifacts": {
+    "reference.wav": "8367d8beff7aef5ee7e041d1657755044c1e4d9232e25c225765adf58c42d834",
+    "generated.wav": "63ec048f12d1ea85aab60b8dae7f4babbb5c24c55ce1ff816bc925f18a3e9f00",
+    "parameters.json": "64ac68677c4117cac437b98fafc85e71bc2c722f05390e49cf88ed490cc31aa1",
+    "program.py": "93f86946777ef0b5cdfeaef7b2fe0e95aa6fe05442cdc696b0a952ec4eb5640d",
+    "model.json": "c03d39caf6db8e644dcc0d1230f1b9c0be46985444f779ee90b4d61dca1c40a3",
+    "reference.caption.json": "3a4dd795f82acd1b852202165e89bf41572a8f5683137719a8abf66002e96ea2",
+    "generated.caption.json": "8bbafe9100fd7870c98bbcf7b0d7881ccb32371e6f46fe5845977343b4d03015",
+    "verification.json": "892e0cc84532d095a35cc64ee79e3bce32d4415a03ec959ad68fe3d1274f01a1"
+  }
+}

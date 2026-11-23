@@ -1,0 +1,6 @@
+interface:
+  display_name: "Code2Audio Dataset"
+  short_description: "Build waveform programs and verify audio dataset records"
+  default_prompt: "Use $code2audio-dataset to build reproducible code–audio pairs from my reference sounds, with independent captions and CLAP verification."
+policy:
+  allow_implicit_invocation: true

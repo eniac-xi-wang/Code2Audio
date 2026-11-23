@@ -1,0 +1,13 @@
+{
+  "duration": 8.0,
+  "sample_rate": 44100,
+  "seeds": [17, 31],
+  "max_rounds": 3,
+  "patience": 2,
+  "minimum_improvement": 0.005,
+  "minimum_target_similarity": 0.35,
+  "maximum_reference_drop": 0.08,
+  "render_timeout_seconds": 30,
+  "agent_timeout_seconds": 600,
+  "test_fraction": 0.01
+}

@@ -1,0 +1,23 @@
+{
+  "description": {
+    "caption": "Heavy rain falling steadily with a consistent patter.",
+    "attributes": [
+      "A continuous, dense patter of raindrops hitting a surface.",
+      "The sound maintains a steady rhythm without significant variation in intensity.",
+      "No other environmental sounds are audible beneath the rain.",
+      "The texture is granular and uniform, suggesting a high volume of droplets.",
+      "The acoustic space feels enclosed, with minimal echo or reverberation.",
+      "The rain appears to be falling uniformly across the recording area."
+    ],
+    "uncertainties": [
+      "The exact surface the rain is striking cannot be determined.",
+      "The recording environment (indoor/outdoor) is not confirmed by sound alone.",
+      "The intensity or type of rain (e.g., drizzle vs. downpour) is not precisely quantifiable."
+    ]
+  },
+  "model": "qwen3-omni-flash",
+  "audio_sha256": "63ec048f12d1ea85aab60b8dae7f4babbb5c24c55ce1ff816bc925f18a3e9f00",
+  "prompt_sha256": "b3fd82c9b84ba95b84b5e741acacb1c3f7dfd39d09d5f2b760572566e93ddc0e",
+  "input_processing": "full excerpt, mono PCM16 at 24 kHz",
+  "request_type": "independent_audio_caption"
+}

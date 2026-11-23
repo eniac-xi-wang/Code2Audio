@@ -1,0 +1,31 @@
+{
+  "components": [
+    {
+      "name": "Diffuse rain texture",
+      "algorithm": "Fresh Gaussian innovations shaped by an aggregate spectrum in five overlapping frequency bands."
+    },
+    {
+      "name": "Individual impacts",
+      "algorithm": "Seeded Bernoulli-Gaussian events filtered by minimum-phase kernels. Event probability is estimated from bandwise excess kurtosis."
+    },
+    {
+      "name": "Slow variation and stereo field",
+      "algorithm": "New smooth random gain trajectories and separate mid/side statistics, transformed back to left/right audio."
+    }
+  ],
+  "controls": {
+    "seed": "Changes event timing and random texture without using the reference waveform.",
+    "duration": "Sets the output length.",
+    "event_density": "Optional multiplier for impact-event probability; default 1. Band energy remains normalized.",
+    "level": "Optional output amplitude multiplier; default 1. Clipping is rejected by the runner.",
+    "psd_mid_side": "Aggregate spectral color, represented at 601 frequency knots per channel.",
+    "band_statistics": "Bandwise kurtosis and slow-envelope variability.",
+    "rms_lr": "Target left/right RMS levels."
+  },
+  "assumptions": [
+    "The eight-second excerpt is approximately stationary at the scene level.",
+    "The model represents a rain texture; it does not identify every physical surface or droplet.",
+    "Minimum-phase impact kernels are a modeling choice, not recovered source phases.",
+    "Compact statistics are fitted from the reference. Samples, original event times and framewise spectra are not stored."
+  ]
+}
