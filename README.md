@@ -106,3 +106,8 @@ The tests exercise rendering, revision, selection and export with a fixture agen
 Waveform computation uses [NumPy](https://numpy.org/) and [SciPy](https://scipy.org/). Qwen Omni Flash generates the captions. Audio–text matching uses [LAION CLAP](https://github.com/LAION-AI/CLAP) with the [Xenova ONNX weights](https://huggingface.co/Xenova/clap-htsat-unfused).
 
 </details>
+
+## License
+
+The project code and documentation are available under the [MIT License](LICENSE).
+The third-party rain reference recording retains its original rights. [Recording credits](examples/rain/source.json)
