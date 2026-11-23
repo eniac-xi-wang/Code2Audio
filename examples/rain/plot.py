@@ -8,18 +8,15 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.colors import LinearSegmentedColormap, Normalize
+from matplotlib.colors import Normalize
 from scipy import signal
 
 from code2audio.io import read_audio
 
-PAPER = "#10252a"
-INK = "#f5f2e5"
-MUTED = "#adcbc6"
-PALETTE = LinearSegmentedColormap.from_list(
-    "rain",
-    ["#102128", "#17373f", "#235860", "#36878b", "#7ab4a9", "#d7cc92", "#ffe9bb"],
-)
+PAPER = "#f8fafc"
+INK = "#15171a"
+MUTED = "#515861"
+PALETTE = matplotlib.colormaps["magma"]
 
 
 def plot(example, output):
@@ -29,7 +26,7 @@ def plot(example, output):
         0.082, 0.825, "Steady rain", fontsize=31, fontfamily="DejaVu Serif", color=INK
     )
     fig.text(0.572, 0.918, "Spectral power density  (dB/Hz)", fontsize=10, color=MUTED)
-    limits = Normalize(-100, -55)
+    limits = Normalize(-100, -40)
     legend = fig.add_axes([0.572, 0.869, 0.344, 0.013])
     legend.imshow(
         np.linspace(limits.vmin, limits.vmax, 256)[None, :],
@@ -39,7 +36,7 @@ def plot(example, output):
         norm=limits,
     )
     legend.set_yticks([])
-    legend.set_xticks([-100, -85, -70, -55])
+    legend.set_xticks([-100, -80, -60, -40])
     legend.tick_params(length=0, pad=4, labelsize=9, colors=MUTED)
     legend.spines[:].set_visible(False)
 
