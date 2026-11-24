@@ -1,6 +1,6 @@
-# Code2Audio
+<h1 align="center">Code2Audio</h1>
 
-An agent turns a short recording into a Python program that synthesizes a similar sound. Each accepted dataset record pairs the program and its parameters with a caption and a reproducible WAV.
+<p align="center">Recreating sound with agent-written Python</p>
 
 ![Eight seconds of rain shown on identical time, frequency and power scales. The field recording is on the left and the Python synthesis is on the right. Both show a broad band of energy around 1 kHz.](assets/rain-analysis.png)
 
@@ -18,6 +18,8 @@ Qwen independently captioned both clips as *“Heavy rain falling steadily with 
 </details>
 
 ## How it works
+
+Each accepted dataset record pairs a Python waveform program and its parameters with a caption and a reproducible WAV.
 
 1. **Analyze the reference.** The pipeline measures spectral peaks, band energy, envelope variation and stereo correlation. Qwen captions the excerpt in a separate request. The coding agent uses both sources of evidence to choose the sound components to model.
 2. **Write and render a program.** The agent writes a waveform function, editable parameters and component notes. The function computes samples directly with NumPy and SciPy and runs from its parameters and seed alone. The runner renders several seeds and repeats one to check exact PCM reproduction.
